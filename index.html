@@ -462,7 +462,6 @@
 
 
 
-<center><img class="w 10 lg:w 27 " src="images/partener.png" alt=""><center></center>
 
                                        
 
@@ -502,6 +501,11 @@
         </div>
     </section>
 
+
+<center><img class="w 10 lg:w 27 " src="images/partener.png" alt=""><center></center>
+
+
+                       
     <!-- Footer -->
    <footer class="bg-transparent text-white py-4 text-center mt-10">
         <div class="container mx-auto">
@@ -525,40 +529,7 @@
     ScrollReveal().reveal(".main-logo", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 300 });
     ScrollReveal().reveal(".nav-main", { delay: 100, reset: true, origin: 'top', distance: '20px', duration: 300 });
 
-    // button menu nav
-    function toggleMenu() {
-        var icon = document.getElementById("menuIcon");
-        var navbar = document.getElementById("navbar-default");
-
-        if (navbar.style.display === 'none' || navbar.style.display === '') {
-            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>';
-            navbar.style.display = 'block';
-        } else {
-            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>';
-            navbar.style.display = 'none';
-        }
-    }
-
-    function changeCopyText(button) {
-        var copyTextElement = button.querySelector('.copy-text');
-        if (copyTextElement) {
-            copyTextElement.textContent = 'copied';
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var clipboard = new ClipboardJS('.js-clipboard');
-    });
-
-
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navbar');
-    const navbg = document.querySelector('.nav-bg');
-    menuIcon.addEventListener('click', () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-        navbg.classList.toggle('active');
-    });
+  
 </script>
 
 </html>
